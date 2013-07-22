@@ -42,8 +42,10 @@ public class RandCodeInterFace {
 	private static final String APP_ID = "nutz";
 	private static final String APP_SECRET = "nutz";
 	private static final String ACCESS_TOKEN = "nutz";
+	//接收电信返回验证码接口, 域名就是该应用的域名
 	private static final String URL = "http://api.nutz.cn/randcode/insert";
-	private static final String EXP_TIME = "360";
+	//过期时间 单位 分钟  配合数据库时间使用
+	private static final String EXP_TIME = "30";
 
 	/**
 	 * 清空验证码
